@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(common.css);
+
+:root {
+  /* Color */
+  --bg1-white: #fff;
+  --bg2-light-white: #f2f2f2;
+  --color-white: #fff;
+  --color-dark-grey: #333;
+  --color-grey: #7e7e7e;
+  --point-blue: #00a1df;
+  --color-black: #10181f;
+  --dark-p-color: #a9afde;
+  --dark-service-color: #24799e;
+  --dark-bg-black: #000;
+
+  /* Font size */
+  --font-x-large: 6rem;
+  --font-large: 4.5rem;
+  --font-medium: 2.2rem;
+  --font-regular: 1.8rem;
+  --font-small: 1.6rem;
+  --font-micro: 1.4rem;
+
+  /* Font weight */
+  --weight-extra-bold: 800;
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+
+  /* size */
+  --size-border-radius: 10px;
+}
