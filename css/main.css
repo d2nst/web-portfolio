@@ -32,11 +32,12 @@ font-family: 'Roboto', sans-serif; */
 
   /* Font size */
   --font-x-large: 6rem;
-  --font-large: 4.5rem;
+  --font-large: 4rem;
   --font-medium: 2.2rem;
   --font-regular: 1.8rem;
   --font-small: 1.6rem;
-  --font-micro: 1.4rem;
+  --font-x-small: 1.4rem;
+  --font-micro: 1.2rem;
 
   /* Font weight */
   --weight-extra-bold: 800;
@@ -70,7 +71,7 @@ html {
 }
 body {
   font-family: var(--korean-font);
-  cursor: none;
+  /* cursor: none; */
 }
 
 p {
@@ -128,9 +129,21 @@ h2 {
 }
 
 /* --------- layout --------- */
+.page-content {
+  padding-left: 288px;
+}
+
+.section1-p {
+  padding-left: 288px;
+}
 
 /* ------ header ------ */
+
 header {
+  display: none;
+}
+
+.header-wrap {
   width: 288px;
   height: 100%;
   box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
@@ -141,6 +154,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   font-family: var(--main-font);
+  z-index: 1;
 }
 
 /* header - menu-box */
@@ -202,7 +216,7 @@ header nav ul li a {
   display: block;
   padding: 8px 0;
   font-family: var(--korean-font);
-  font-size: 19px;
+  font-size: 17px;
   font-weight: var(--weight-extra-bold);
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -262,6 +276,7 @@ header .author-text a {
 }
 
 /* ------ main ------ */
+
 /* ---- main #home ---- */
 
 #home {
@@ -269,7 +284,7 @@ header .author-text a {
   min-height: 100vh;
   position: relative;
   display: flex;
-  background-color: var(--bg2-light-white);
+  background: var(--bg2-light-white);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -313,14 +328,15 @@ header .author-text a {
   width: 600px;
 }
 
-.sec1 .tlt {
+.sec1 .text .tlt {
   font-size: var(--font-x-large);
   margin-bottom: 25px;
 }
 
 .sec1 .text p {
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 30px;
+  font-size: var(--font-x-small);
 }
 
 .sec1 .text p span {
@@ -335,7 +351,7 @@ header .author-text a {
   border: 2px solid transparent;
   background: var(--point-blue);
   border-radius: 15px;
-  font-size: var(--font-micro);
+  font-size: var(--font-x-small);
   font-weight: var(--weight-medium);
   line-height: 41px;
   text-align: center;
@@ -357,7 +373,7 @@ header .author-text a {
   left: 0;
   transition: opacity 0.9s;
   width: 34px;
-  height: 10px;
+  height: 50px;
 }
 .scrolldown:hover {
   opacity: 1;
@@ -546,8 +562,89 @@ header .author-text a {
   }
 }
 
-/* main #about */
+/* ---------- main #about ---------- */
 #about {
   width: 100%;
-  height: 100vh;
 }
+
+#about .content {
+  padding: 90px 20px 120px;
+}
+
+#about .tit {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translate(0, -30%);
+  transition: 1s ease-in-out;
+}
+
+#about .tit.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* #about - leftPart */
+
+.about-text h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin-bottom: 18px;
+}
+.about-text h3 span {
+  font-weight: var(--weight-bold);
+}
+
+.about-text p,
+.about-skill p {
+  font-size: var(--font-x-small);
+}
+
+.about-text p + p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Skill */
+
+.about-skill h3 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  margin-bottom: 21px;
+}
+
+.skillset {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill:nth-of-type(2n) {
+  margin-left: 30px;
+}
+
+.skill_description {
+  font-size: var(--font-x-small);
+  font-weight: var(--weight-medium);
+  margin-bottom: 10px;
+}
+
+.skill__bar {
+  width: 253px;
+  height: 14px;
+  border: 1px solid var(--point-blue);
+  position: relative;
+}
+
+.skill__bar .skill_value {
+  width: 90%;
+  height: 8px;
+  background-color: var(--point-blue);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+/* #about - rightPart */
