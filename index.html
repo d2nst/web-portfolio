@@ -22,7 +22,23 @@
     />
 
     <!-- animate CSS -->
-    <link rel="stylesheet" href="./css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- magnific-popup CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -30,18 +46,29 @@
     <!-- jQuery JS -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-    <!-- textillate Js -->
-    <script src="./js/jquery.lettering.js"></script>
-    <script src="./js/jquery.textillate.js"></script>
     <!-- Bootstrap JS  -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <!-- textillate Js -->
+    <script src="./js/jquery.lettering.js"></script>
+    <script src="./js/jquery.textillate.js"></script>
+
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Gallery JS -->
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/gallery.js"></script>
+
     <!-- My JS -->
+    <script defer src="js/gallery.js"></script>
     <script defer src="js/main.js"></script>
   </head>
 
   <body>
     <div class="cursor"></div>
+    <!-- header -->
     <header>
       <div class="header-wrap">
         <div class="menu-box">
@@ -123,7 +150,8 @@
         <!-- author end -->
       </div>
     </header>
-    <!-- // header -->
+
+    <!-- main -->
     <main>
       <section id="home" class="home-page">
         <div class="sec1">
@@ -178,11 +206,11 @@
         </div>
         <!-- scroll-down End -->
       </section>
-      <!-- //section1 -->
+      <!-- section1 -->
       <section id="about" class="page-content">
         <div class="container">
-          <div class="row content">
-            <h2 class="tit">About Me</h2>
+          <div class="row">
+            <h2 class="tit wow fadeInUp" data-wow-delay="0.2s">About Me</h2>
             <div class="col-md-7 col-sm-12 col-xs-12 leftpart">
               <div class="about-text">
                 <h3>
@@ -235,7 +263,7 @@
                     <div class="skill_description">
                       <span>Jquery</span>
                     </div>
-                    <div class="skill__bar" data-num="80">
+                    <div class="skill__bar" data-num="60">
                       <div class="skill_value"></div>
                     </div>
                   </div>
@@ -267,17 +295,456 @@
           </div>
         </div>
       </section>
-      <!-- //section2 -->
-      <section id="service" class="page-content"></section>
-      <!-- //section3 -->
-      <section id="portfolio" class="page-content"></section>
-      <!-- //section4 -->
-      <section id="contact" class="page-content"></section>
-      <!-- //section5 -->
+      <!-- section2 -->
+      <section id="service" class="page-content">
+        <div class="container">
+          <div class="row">
+            <h2 class="tit wow fadeInUp" data-wow-delay="0.2s">What I do?</h2>
+            <div class="swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="card-box">
+                    <div class="sec3 card1">
+                      <h3>Web Publishing</h3>
+                      <p>
+                        웹표준을 고려하여 적절한 코드를 사용하고 다양한 종류와
+                        버전의 브라우저에 맞게 마크업합니다. CSS3의 속성을
+                        활용해서 다양한 배치와 디자인을 합니다.
+                      </p>
+                    </div>
+                    <div class="sec3 card2 bg1">
+                      <h3>Web Publishing</h3>
+                      <h3>01</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-box">
+                    <div class="sec3 card1">
+                      <h3>Web Design</h3>
+                      <p>
+                        Adobe Photoshop & Illustrator의 기능을 이해하고 Adobe
+                        XD를 사용하여 시안 작업 및 웹&앱 디자인 작업을 할 수
+                        있습니다.
+                      </p>
+                    </div>
+                    <div class="sec3 card2 bg2">
+                      <h3>Web Design</h3>
+                      <h3>02</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-box">
+                    <div class="sec3 card1">
+                      <h3>Responsive Web</h3>
+                      <p>
+                        Bootstrap과 Materialize 등 CSS 프레임워크에 대한 이해를
+                        바탕으로 이를 적용 및 활용하여 반응형 웹을 제작할 수
+                        있습니다.
+                      </p>
+                    </div>
+                    <div class="sec3 card2 bg3">
+                      <h3>Responsive Web</h3>
+                      <h3>03</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-box">
+                    <div class="sec3 card1">
+                      <h3>sass</h3>
+                      <p>
+                        컴포넌트화 되고 유지보수에 최적화된 코딩을 하기 위해
+                        SASS, SCSS를 활용할 수 있습니다.
+                      </p>
+                    </div>
+                    <div class="sec3 card2 bg4">
+                      <h3>sass</h3>
+                      <h3>04</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-box">
+                    <div class="sec3 card1">
+                      <h3>App Design</h3>
+                      <p>
+                        사용자 경혐을 기반으로 모바일 UI/UX 디자인 및 프로토타입
+                        제작이 가능합니다. 디자인 트렌드를 반영하여 XD로 작업한
+                        경험이 있습니다.
+                      </p>
+                    </div>
+                    <div class="sec3 card2 bg5">
+                      <h3>App Design</h3>
+                      <h3>05</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-box">
+                    <div class="sec3 card1">
+                      <h3>App Develope</h3>
+                      <p>
+                        Vue & PWA 를 기반으로 하여 웹앱을 개발한 경험이
+                        있습니다. 디자인부터 시작해 컴포넌트 마크업,
+                        스타일링까지 퍼블리싱 할 수 있습니다.
+                      </p>
+                    </div>
+                    <div class="sec3 card2 bg6">
+                      <h3>App Develope</h3>
+                      <h3>06</h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section3 -->
+      <section id="portfolio" class="page-content">
+        <div class="container">
+          <!-- title -->
+          <div class="row title">
+            <div class="col-xs-12">
+              <h2 class="tit wow fadeInUp" data-wow-delay="0.2s">Portfolio</h2>
+
+              <!-- g-menu -->
+              <div class="g-menu">
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      cursor-class="link-grow"
+                      class="link active"
+                      id="m1"
+                      >All</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" cursor-class="link-grow" class="link" id="m2"
+                      >GRAPHIC</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" cursor-class="link-grow" class="link" id="m3"
+                      >WEB</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" cursor-class="link-grow" class="link" id="m4"
+                      >RWD</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" cursor-class="link-grow" class="link" id="m5"
+                      >WebApp</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="row content">
+            <div class="col-xs-12">
+              <div class="grid" id="gallery">
+                <div class="grid-item g4">
+                  <img
+                    src="./images/lg/work-mockup-1.png"
+                    alt="프로젝트 이미지-1"
+                  />
+                  <div class="caption">
+                    <h3>Bootstrap page</h3>
+                    <div class="icon">
+                      <a href="#popup1" cursor-class="link-grow"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a href="http://www.naver.com" target="_blank"
+                        ><i class="fa fa-link" cursor-class="link-grow"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g3">
+                  <img
+                    src="./images/lg/work-mockup-2.png"
+                    alt="프로젝트 이미지-2"
+                  />
+                  <div class="caption">
+                    <h3>Reitna</h3>
+                    <div class="icon">
+                      <a href="#popup2" cursor-class="link-grow"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project3/html/main.html"
+                        target="_blank"
+                        cursor-class="link-grow"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g3">
+                  <img
+                    src="./images/lg/work-mockup-3.png"
+                    alt="프로젝트 이미지-3"
+                  />
+                  <div class="caption">
+                    <h3>Bootstrap page</h3>
+                    <div class="icon">
+                      <a href="#popup2" class="open-popup-link"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project6/html/main.html"
+                        target="_blank"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g4">
+                  <img
+                    src="./images/lg/work-mockup-4.png"
+                    alt="프로젝트 이미지-4"
+                  />
+                  <div class="caption">
+                    <h3>Bootstrap site</h3>
+                    <div class="icon">
+                      <a href="#popup2" class="open-popup-link"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project3/html/main.html"
+                        target="_blank"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g4">
+                  <img
+                    src="./images/lg/work-mockup-5.png"
+                    alt="프로젝트 이미지-5"
+                  />
+                  <div class="caption">
+                    <h3>Bootstrap page</h3>
+                    <div class="icon">
+                      <a href="#popup2" class="open-popup-link"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project3/html/main.html"
+                        target="_blank"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g3">
+                  <img
+                    src="./images/lg/work-mockup-6.png"
+                    alt="프로젝트 이미지-6"
+                  />
+                  <div class="caption">
+                    <h3>Bootstrap page</h3>
+                    <div class="icon">
+                      <a href="#popup2" class="open-popup-link"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project3/html/main.html"
+                        target="_blank"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g5">
+                  <img src="./images/lg/work-7.png" alt="프로젝트 이미지-7" />
+                  <div class="caption">
+                    <h3>Bootstrap page</h3>
+                    <div class="icon">
+                      <a href="#popup2" class="open-popup-link"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project3/html/main.html"
+                        target="_blank"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item g5">
+                  <img src="./images/lg/work-8.png" alt="프로젝트 이미지-8" />
+                  <div class="caption">
+                    <h3>Bootstrap page</h3>
+                    <div class="icon">
+                      <a href="#popup2" class="open-popup-link"
+                        ><i class="fa fa-plus-square-o"></i
+                      ></a>
+                      <a
+                        href="http://d2nst.dothome.co.kr/project3/html/main.html"
+                        target="_blank"
+                        ><i class="fa fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <!-- Content Popup -->
+          <!-- 첫번째 팝업컨텐츠 -->
+          <div id="popup1" class="white-popup mfp-hide">
+            <div class="popup-content">
+              <!-- popup-header -->
+              <div class="p-header">
+                <h3>Bootstrap site</h3>
+              </div>
+
+              <!-- popup-body -->
+              <div class="p-body">
+                <div class="content-img">
+                  <img
+                    src="./images/portfolio-popup/work-img1.png"
+                    alt="포트폴리오이미지1"
+                  />
+                </div>
+                <div class="content-text">
+                  <p>제작기간 : 2022-08-18 ~ 08-19</p>
+                  <p>템플릿을 받아 기업사이트를 반응형으로 제작했습니다.</p>
+                </div>
+              </div>
+
+              <!-- popup-footer-->
+              <div class="p-footer">
+                <button type="button" class="btn close-btn">Close</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 두번째 팝업컨텐츠 -->
+          <div id="popup2" class="white-popup mfp-hide">
+            <div class="popup-btn">
+              <a href="#" class="prev">
+                <i class="xi-long-arrow-left"></i>
+              </a>
+              <a href="#" class="next">
+                <i class="xi-long-arrow-right"></i>
+              </a>
+            </div>
+            <div class="popup-content">
+              <!-- popup-header -->
+              <div class="p-header">
+                <h3>Retina</h3>
+              </div>
+
+              <!-- popup-body -->
+              <div class="p-body">
+                <div class="content-img">
+                  <img
+                    src="./images/portfolio-popup/work-img2.png"
+                    alt="포트폴리오이미지1"
+                  />
+                </div>
+                <div class="content-text">
+                  <p>제작기간 : 2022-08-18 ~ 08-19</p>
+                  <p>템플릿을 받아 기업사이트를 반응형으로 제작했습니다.</p>
+                </div>
+              </div>
+
+              <!-- popup-footer-->
+              <div class="p-footer">
+                <button type="button" class="btn close-btn">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section4 -->
+      <section id="contact" class="page-content">
+        <div class="container">
+          <div class="row title">
+            <h2 class="tit wow fadeInUp" data-wow-delay="0.2s">Contact</h2>
+            <div class="contact-title">
+              <h3>저에 대해 더 궁금하신 점이 있다면?</h3>
+              <p>
+                아래 연락처로 연락주시길 바랍니다. 시간 내주셔서 감사합니다.
+              </p>
+            </div>
+            <div class="contact-card">
+              <div class="card wow rotateInUpLeft" data-wow-delay="0.3s">
+                <div class="emoji">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>010-4756-9683</p>
+                </div>
+              </div>
+              <div class="card wow rotateInUpLeft" data-wow-delay="0.6s">
+                <div class="emoji">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>wlsdl950@gmail.com</p>
+                </div>
+              </div>
+              <div class="card wow rotateInUpLeft" data-wow-delay="0.9s">
+                <div class="emoji">
+                  <i class="fa fa-comments"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>KakaoTalk</h4>
+                  <img
+                    src="./images/lg/chat-qr.png"
+                    alt="카카오톡오픈채팅큐알코드"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section5 -->
     </main>
 
-    <!-- //main -->
-    <footer></footer>
-    <!-- //footer -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-text">
+        <p>Copyright &copy; 2022. Kim kyoungjin. All right reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Arrow up -->
+    <div class="progress-wrap active-progress" cursor-class="arrow">
+      <i class="fa fa-arrow-up"></i>
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 35.4911;
+          "
+        ></path>
+      </svg>
+    </div>
   </body>
 </html>
