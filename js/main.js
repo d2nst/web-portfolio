@@ -126,13 +126,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-// (portfolio) 팝업창 닫기
-$('body').on('click', '.close-btn', function (e) {
-  e.preventDefault();
-
-  $.magnificPopup.close();
-});
-
 // arrow up transition
 var progressPath = document.querySelector('.progress-wrap path');
 var pathLength = progressPath.getTotalLength();
@@ -164,3 +157,18 @@ $('.progress-wrap').on('click', function (event) {
   $('html, body').animate({ scrollTop: 0 }, duration);
   return false;
 });
+
+//
+const $link = $('.g-menu ul li a');
+const $navbar = $('header nav ul li a');
+
+function menuActive(link) {
+  link.each(function (idx, item) {
+    $(item).on('click', function (e) {
+      e.preventDefault();
+      link.removeClass('active');
+      $(item).addClass('active');
+    });
+  });
+}
+menuActive($link);

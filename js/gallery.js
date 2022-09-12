@@ -15,12 +15,21 @@ $(function () {
   var m5 = $('#m5');
 
   //라이트박스 초기 설정
-  $('.grid-item a').magnificPopup({
+  $('.open-popup-link').magnificPopup({
     type: 'inline',
     closeOnBgClick: true,
     closeBtnInside: true,
     gallery: {
       enabled: true,
+    },
+  });
+
+  $('.g5 .popup-img').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true,
+      closeOnContentClick: true,
+      navigateByImgClick: true,
     },
   });
 
@@ -34,7 +43,7 @@ $(function () {
     });
 
     //magnific 팝업
-    $('.grid-item a').magnificPopup({
+    $('.open-popup-link').magnificPopup({
       type: 'inline',
       closeOnBgClick: true,
       closeBtnInside: true,
@@ -53,7 +62,7 @@ $(function () {
     });
 
     //magnific 팝업
-    $('.g2 a').magnificPopup({
+    $('.open-popup-link').magnificPopup({
       type: 'inline',
       closeOnBgClick: true,
       closeBtnInside: true,
@@ -72,7 +81,7 @@ $(function () {
     });
 
     //magnific 팝업
-    $('.g3 a').magnificPopup({
+    $('.open-popup-link').magnificPopup({
       type: 'inline',
       closeOnBgClick: true,
       closeBtnInside: true,
@@ -84,6 +93,8 @@ $(function () {
   });
 
   m4.click(function (e) {
+    console.log($('.g4 .open-popup-link'));
+    e.preventDefault();
     grid.isotope({
       itemSelector: '.grid-item',
       layoutMode: 'fitRows',
@@ -91,15 +102,15 @@ $(function () {
     });
 
     //magnific 팝업
-    $('.g4 a').magnificPopup({
+    $('.open-popup-link').magnificPopup({
       type: 'inline',
+      midClick: true,
       closeOnBgClick: true,
       closeBtnInside: true,
       gallery: {
         enabled: true,
       },
     });
-    e.preventDefault();
   });
 
   m5.click(function (e) {
@@ -110,14 +121,22 @@ $(function () {
     });
 
     //magnific 팝업
-    $('.g5 a').magnificPopup({
-      type: 'inline',
-      closeOnBgClick: true,
-      closeBtnInside: true,
+    $('.g5 .popup-img').magnificPopup({
+      type: 'image',
       gallery: {
         enabled: true,
+        closeOnContentClick: true,
+        navigateByImgClick: true,
       },
     });
+
     e.preventDefault();
   });
+});
+
+// (portfolio) 팝업창 닫기
+$('body').on('click', '.close-btn', function (e) {
+  e.preventDefault();
+
+  $.magnificPopup.close();
 });

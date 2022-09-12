@@ -385,6 +385,7 @@ header .author-text a {
   height: 8px;
   opacity: 0;
 }
+
 .scrolldown:hover .help-down {
   animation: arrow-down 0.3s infinite alternate;
 }
@@ -401,6 +402,7 @@ header .author-text a {
   left: 50%;
   transition: opacity 0.5s;
 }
+
 .help-mouse-wheel:before,
 .help-mouse-wheel:after {
   content: '';
@@ -413,12 +415,14 @@ header .author-text a {
   transition: top 0.5s, height 0.5s, opacity 0.5s;
   width: 4px;
 }
+
 .help-mouse-wheel:before {
   animation: scroll 1.5s 0.75s infinite ease-in-out;
 }
 .help-mouse-wheel:after {
   animation: scroll 1.5s infinite ease-in-out;
 }
+
 .help-down {
   animation: arrow-down 0.6s infinite alternate ease-in-out;
   border-bottom: 2px solid #cdcdcd;
@@ -820,6 +824,10 @@ header .author-text a {
   white-space: nowrap;
 }
 
+#portfolio .g-menu li a.active {
+  color: var(--point-blue);
+}
+
 .link::before,
 .link::after {
   position: absolute;
@@ -833,10 +841,6 @@ header .author-text a {
 
 .link::before {
   content: '';
-  /* show by default */
-}
-
-.link::before {
   transform-origin: 100% 50%;
   transform: scale3d(0, 1, 1);
   transition: transform 0.3s;
@@ -931,6 +935,23 @@ header .author-text a {
   transition: all 0.8s ease;
 }
 
+/* 매그니픽팝업 내 close btn */
+.mfp-close {
+  top: 15px;
+  right: 15px;
+}
+
+.mfp-close:active {
+  top: 15px;
+}
+
+.mfp-image-holder .mfp-close {
+  top: 3px;
+}
+.mfp-image-holder .mfp-close:active {
+  top: 3px;
+}
+
 /* portfolio - popup */
 
 .white-popup {
@@ -956,14 +977,8 @@ header .author-text a {
   color: #000;
 }
 
-/* 매그니픽팝업 내 close btn */
-.mfp-close {
-  top: 10px;
-  right: 10px;
-}
-
 .p-body {
-  margin-bottom: 10px;
+  height: 520px;
 }
 
 .p-body .content-img {
@@ -979,10 +994,10 @@ header .author-text a {
 }
 
 .p-body .content-img img:hover {
-  animation: scroll 10s;
+  animation: scrolling 10s;
 }
 
-@keyframes scroll {
+@keyframes scrolling {
   0% {
     transform: translateY(0px);
   }
@@ -1011,8 +1026,11 @@ header .author-text a {
   font-size: var(--font-x-small);
   line-height: 25px;
 }
+
 .p-footer {
-  padding: 20px;
+  height: 70px;
+  padding: 0 10px;
+  line-height: 70px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
