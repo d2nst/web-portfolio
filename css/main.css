@@ -28,7 +28,8 @@ font-family: 'Roboto', sans-serif; */
   --color-black: #10181f;
   --service-color: #24799e;
   --dark-p-color: #a9afde;
-  --dark-bg-black: #000;
+  --dark-bg1-black: #191c26;
+  --dark-bg2-black: #111319;
 
   /* Font size */
   --font-x-large: 6rem;
@@ -129,6 +130,54 @@ h2 {
   border: none;
 }
 
+/* darkmode */
+.header-wrap.act {
+  background: #000;
+  color: white;
+}
+
+.header-wrap.act .menu-box {
+  border-bottom: 1px solid #191c26;
+}
+.header-wrap.act .author {
+  border-top: 1px solid #191c26;
+}
+
+.header-wrap.act .switch-handle {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header-wrap.act .light-text {
+  display: none;
+}
+
+.header-wrap.act .dark-text {
+  display: block;
+  color: white;
+}
+
+main.act > section:nth-child(odd) {
+  background: var(--dark-bg1-black) !important;
+  color: white;
+}
+main.act > section:nth-child(even),
+footer {
+  background: var(--dark-bg2-black) !important;
+  color: white;
+}
+
+.header-wrap.act .logo,
+main.act > section a {
+  color: white !important;
+}
+
+main.act > section a.active {
+  color: #00a1df !important;
+}
+
+main.act > section h4 {
+  color: #000;
+}
+
 /* --------- layout --------- */
 .page-content {
   padding-left: 288px;
@@ -138,6 +187,9 @@ h2 {
   padding-left: 288px;
 }
 
+#navbar {
+  display: none;
+}
 /* ------ header ------ */
 
 header {

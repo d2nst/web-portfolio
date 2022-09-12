@@ -34,6 +34,7 @@ $(window).scroll(function () {
 // (NAV) 완성
 
 //  dark mode start
+
 // dark mode start 완성 !
 
 // (HOME) textillate start
@@ -57,7 +58,7 @@ new WOW().init();
 
 // (ABOUT) progress bar
 const progress = document.querySelectorAll('.skill__bar');
-const triggerPoint = document.querySelector('.skillset').offsetTop - 500;
+const triggerPoint = document.querySelector('.skillset').offsetTop - 700;
 
 let excuted = false;
 
@@ -171,3 +172,9 @@ function menuActive(link) {
   });
 }
 menuActive($link);
+
+// Deylight Color Theme Toggle
+$('.switch-handle').click(function (e) {
+  e.preventDefault();
+  $('.header-wrap, main').toggleClass('act');
+});
