@@ -160,7 +160,6 @@ $('.progress-wrap').on('click', function (event) {
 
 //
 const $link = $('.g-menu ul li a');
-const $navbar = $('header nav ul li a');
 
 function menuActive(link) {
   link.each(function (idx, item) {
