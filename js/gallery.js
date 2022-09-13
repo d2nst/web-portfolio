@@ -133,10 +133,3 @@ $(function () {
     e.preventDefault();
   });
 });
-
-// (portfolio) 팝업창 닫기
-$('body').on('click', '.close-btn', function (e) {
-  e.preventDefault();
-
-  $.magnificPopup.close();
-});

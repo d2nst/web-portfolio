@@ -24,10 +24,10 @@ $(window).scroll(function () {
   const $windowTop = $(window).scrollTop();
   const $aboutSection = $('#about').offset().top - 100;
   if ($windowTop > $aboutSection) {
-    $('header').fadeIn(1000).css({ display: 'block' });
+    $('header .header-container').fadeIn(1000).css({ display: 'block' });
     $('#home').addClass('section1-p');
   } else {
-    $('header').fadeOut().css({ display: 'none' });
+    $('header .header-container').fadeOut().css({ display: 'none' });
     $('#home').removeClass('section1-p');
   }
 });
@@ -127,6 +127,32 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// (portfolio) 팝업창 닫기
+$('body').on('click', '.close-btn', function (e) {
+  e.preventDefault();
+  $.magnificPopup.close();
+});
+
+// (portfolio) 메뉴바 활성화하기
+const $link = $('.g-menu ul li a');
+
+function menuActive(link) {
+  link.each(function (idx, item) {
+    $(item).on('click', function (e) {
+      e.preventDefault();
+      link.removeClass('active');
+      $(item).addClass('active');
+    });
+  });
+}
+menuActive($link);
+
+// Deylight Color Theme Toggle
+$('.switch-handle').click(function (e) {
+  e.preventDefault();
+  $('.header-wrap, main, footer').toggleClass('act');
+});
+
 // arrow up transition
 var progressPath = document.querySelector('.progress-wrap path');
 var pathLength = progressPath.getTotalLength();
@@ -159,22 +185,23 @@ $('.progress-wrap').on('click', function (event) {
   return false;
 });
 
-//
-const $link = $('.g-menu ul li a');
-
-function menuActive(link) {
-  link.each(function (idx, item) {
-    $(item).on('click', function (e) {
-      e.preventDefault();
-      link.removeClass('active');
-      $(item).addClass('active');
-    });
-  });
-}
-menuActive($link);
-
-// Deylight Color Theme Toggle
-$('.switch-handle').click(function (e) {
-  e.preventDefault();
-  $('.header-wrap, main').toggleClass('act');
+// resize
+$(window).resize(function () {
+  if ($(window).width() >= 1200) {
+    $('header').css({ display: 'block' });
+    $('.mobile-header').css({ display: 'none' });
+  }
+  if ($(window).width() < 1200) {
+    $('header').css({ display: 'none' });
+    $('.mobile-header').css({ display: 'block' });
+  }
+  if ($(window).width() < 1200) {
+    $('#portfolio > div:first')
+      .removeClass('container')
+      .addClass('container-fluid');
+  } else {
+    $('#portfolio > div:first')
+      .removeClass('container-fluid')
+      .addClass('container');
+  }
 });
