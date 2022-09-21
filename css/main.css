@@ -190,6 +190,17 @@ main.act > section h4 {
   color: #000;
 }
 
+main.act #contact .contact-card .card h4 {
+  color: var(--color-white);
+}
+
+main.act .qr-dark {
+  display: block;
+}
+
+main.act .qr-light {
+  display: none;
+}
 /* --------- layout --------- */
 .page-content {
   padding-left: 288px;
@@ -824,7 +835,7 @@ header .author-text a {
 }
 
 .card-box .sec3.card2 h3 {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   color: #fff;
   transition: 0.5s;
@@ -1238,6 +1249,14 @@ header .author-text a {
 .contact-card .card img {
   width: 60px;
   height: 60px;
+}
+
+.qr-dark {
+  display: none;
+}
+
+.qr-light {
+  display: block;
 }
 
 .contact-card .card:nth-child(3) .contact-text {
