@@ -110,19 +110,19 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 10,
     },
 
-    640: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
 
-    480: {
+    576: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
 
-    320: {
+    480: {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
   },
 });
@@ -150,7 +150,9 @@ menuActive($link);
 // Deylight Color Theme Toggle
 $('.switch-handle').click(function (e) {
   e.preventDefault();
-  $('.header-wrap, main, footer').toggleClass('act');
+  $(
+    '.navbar__toggle-btn, .header-wrap,.mobile-header, main, footer'
+  ).toggleClass('act');
 });
 
 // arrow up transition
