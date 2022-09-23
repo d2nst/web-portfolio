@@ -1000,7 +1000,7 @@ header .author-text a {
 }
 .grid-item .caption h3 {
   color: var(--color-white);
-  font-size: var(--font-medium);
+  font-size: var(--font-regular);
   margin-left: 30px;
 }
 
