@@ -131,19 +131,29 @@ h2 {
 }
 
 /* darkmode */
-
-.navbar__toggle-btn.act {
-  color: white;
-}
 .header-wrap.act,
 .mobile-header.act {
   background: #000;
-  color: white;
+  color: var(--color-white);
 }
 
 .mobile-header.act .mobile-middle-box li a {
-  color: white;
+  color: var(--color-white);
 }
+
+/* hamburger button menu - darkmode */
+.hamburger-button span.act {
+  background: var(--color-white);
+}
+
+.overlay.act {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.overlay.act nav ul li a {
+  color: var(--color-white);
+}
+
 .header-wrap.act .menu-box {
   border-bottom: 1px solid #191c26;
 }
@@ -201,6 +211,7 @@ main.act .qr-dark {
 main.act .qr-light {
   display: none;
 }
+
 /* --------- layout --------- */
 .page-content {
   padding-left: 288px;
@@ -213,6 +224,11 @@ main.act .qr-light {
 .mobile-header {
   display: none;
 }
+
+.overlay {
+  display: none;
+}
+
 /* ------ header ------ */
 
 .header-container {

@@ -151,7 +151,7 @@ menuActive($link);
 $('.switch-handle').click(function (e) {
   e.preventDefault();
   $(
-    '.navbar__toggle-btn, .header-wrap,.mobile-header, main, footer'
+    '.header-wrap, .mobile-header, .hamburger-button span, .overlay, main, footer'
   ).toggleClass('act');
 });
 
@@ -206,4 +206,11 @@ $(window).resize(function () {
       .removeClass('container-fluid')
       .addClass('container');
   }
+});
+
+// hamburger menu-bar
+$('.hamburger-button').click(function (ev) {
+  ev.preventDefault();
+  $(this).toggleClass('active-btn');
+  $('.overlay').toggleClass('visible');
 });
