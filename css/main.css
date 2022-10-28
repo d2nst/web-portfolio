@@ -200,6 +200,10 @@ main.act > section h4 {
   color: #000;
 }
 
+main.act #contact .contact-card .card {
+  background: var(--dark-bg2-black);
+}
+
 main.act #contact .contact-card .card h4 {
   color: var(--color-white);
 }

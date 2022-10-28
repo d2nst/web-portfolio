@@ -120,6 +120,10 @@
     display: none;
   }
 
+  main.act #contact .contact-card .card {
+    background: transparent;
+  }
+
   /* ====== HOME ====== */
   #home {
     height: 800px;
@@ -302,10 +306,6 @@
   footer {
     padding-left: 0;
   }
-
-  footer p {
-    font-size: var(--font-small);
-  }
 }
 
 /* =============================================== */
@@ -407,6 +407,10 @@
 
   .mobile-right-box .dark-text {
     display: none;
+  }
+
+  main.act #contact .contact-card .card {
+    background: transparent;
   }
 
   /* hamburger button */
@@ -663,9 +667,6 @@
   footer {
     padding-left: 0;
   }
-  footer p {
-    font-size: var(--font-micro);
-  }
 }
 
 /* =============================================== */
@@ -771,6 +772,9 @@
     display: none;
   }
 
+  main.act #contact .contact-card .card {
+    background: transparent;
+  }
   /* hamburger button */
   .hamburger-button {
     position: relative;
@@ -1119,6 +1123,10 @@
 
   .mobile-right-box .dark-text {
     display: none;
+  }
+
+  main.act #contact .contact-card .card {
+    background: transparent;
   }
 
   /* hamburger button */
