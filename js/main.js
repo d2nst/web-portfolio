@@ -1,6 +1,6 @@
 // * mouse cursor custom start *
 let mousePointer = document.querySelector('.cursor');
-let mouseHover = document.querySelectorAll('[cursor-class]');
+let mouseHover = document.querySelectorAll('[data-cursor-class]');
 
 window.addEventListener('mousemove', cursor);
 
