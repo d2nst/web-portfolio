@@ -33,10 +33,6 @@ $(window).scroll(function () {
 });
 // (NAV) 완성
 
-//  dark mode start
-
-// dark mode start 완성 !
-
 // (HOME) textillate start
 $('.tlt').textillate({
   loop: true,
