@@ -888,7 +888,7 @@ header .author-text a {
 
 /* main portfolio */
 #portfolio {
-  width: 100%;
+  min-width: 100%;
   height: 100%;
 }
 
