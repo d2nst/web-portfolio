@@ -955,11 +955,12 @@ header .author-text a {
   justify-content: center;
   align-items: center;
   margin: 0 45px;
+  left: 20px;
 }
 
 .grid-item {
-  width: 320px;
-  height: 390px;
+  width: 310px;
+  height: 360px;
   background-color: #f2f2f2;
   border-radius: 10px;
   margin: 0 10px 20px;
@@ -1082,7 +1083,7 @@ header .author-text a {
 
 .p-body .content-img {
   width: 600px;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -1264,6 +1265,16 @@ header .author-text a {
   font-family: var(--main-font);
   font-weight: var(--weight-medium);
   color: var(--color-grey);
+}
+
+.contact-card .card .git-address {
+  font-size: var(--font-x-small);
+  transition: 0.2s ease;
+  color: var(--color-grey) !important;
+}
+.contact-card .card .git-address:hover {
+  font-size: 1.5rem;
+  color: #00a1df !important;
 }
 
 .contact-card .card img {

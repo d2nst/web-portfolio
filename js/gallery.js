@@ -93,8 +93,6 @@ $(function () {
   });
 
   m4.click(function (e) {
-    console.log($('.g4 .open-popup-link'));
-    e.preventDefault();
     grid.isotope({
       itemSelector: '.grid-item',
       layoutMode: 'fitRows',
@@ -102,26 +100,7 @@ $(function () {
     });
 
     //magnific 팝업
-    $('.open-popup-link').magnificPopup({
-      type: 'inline',
-      midClick: true,
-      closeOnBgClick: true,
-      closeBtnInside: true,
-      gallery: {
-        enabled: true,
-      },
-    });
-  });
-
-  m5.click(function (e) {
-    grid.isotope({
-      itemSelector: '.grid-item',
-      layoutMode: 'fitRows',
-      filter: '.g5',
-    });
-
-    //magnific 팝업
-    $('.g5 .popup-img').magnificPopup({
+    $('.g4 .popup-img').magnificPopup({
       type: 'image',
       gallery: {
         enabled: true,
