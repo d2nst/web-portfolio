@@ -267,6 +267,10 @@
     padding: 90px 120px 0;
   }
 
+  #gallery {
+    left: 2%;
+  }
+
   #gallery .grid-item {
     width: 30%;
   }
@@ -629,6 +633,10 @@
     padding: 90px 100px 0;
   }
 
+  #gallery {
+    left: 2%;
+  }
+
   #gallery .grid-item {
     width: 30%;
   }
@@ -691,9 +699,6 @@
   header {
     display: none;
   }
-  .mobile-header {
-    display: block;
-  }
 
   /* 전체 타이틀 - tit h2 사이즈  */
 
@@ -709,7 +714,9 @@
   main .page-content {
     padding-left: 0;
   }
+
   .mobile-header {
+    display: block;
     width: 100%;
     height: 63px;
     background: var(--color-white);
@@ -987,6 +994,9 @@
     padding: 90px 100px 0;
   }
 
+  #gallery {
+    left: 2%;
+  }
   #gallery .grid-item {
     width: 45%;
   }
