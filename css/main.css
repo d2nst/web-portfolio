@@ -954,11 +954,7 @@ main {
 }
 
 #gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  left: 3.3%;
+  margin: 0 auto;
 }
 
 .grid-item {
