@@ -955,9 +955,10 @@ main {
 
 #gallery {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2%;
+  left: 3.3%;
 }
 
 .grid-item {
