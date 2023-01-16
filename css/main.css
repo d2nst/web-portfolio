@@ -1126,6 +1126,10 @@ main {
   line-height: 25px;
 }
 
+.p-body .content-text .ref {
+  font-size: var(--font-micro);
+}
+
 .p-footer {
   height: 70px;
   padding: 0 10px;
